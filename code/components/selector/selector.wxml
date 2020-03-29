@@ -1,0 +1,38 @@
+<!-- 商品列表头部 -->
+<view class="list_top">
+  <!-- 搜索框 -->
+  <view class="selector">
+    <view class="selector_bar" hover-class="none" hover-stop-propagation="false">
+      <text class="fa fa-search icon_select" aria-hidden="true"></text>
+      <input class="nav_select" placeholder="请输入关键字进行搜索"/>
+    </view>
+  </view>
+  <!-- 排序 -->
+  <view class="sort">
+    <view class="sort_comprehensive">
+      <text class="comprehensive_text">综合 </text>
+      <text class="line_r"></text>
+    </view>
+    <view class="sort_sales">
+      <text class="comprehensive_text">销量 </text>
+      <text class="line_r"></text>
+    </view>
+    <view class="sort_price">
+      <view class="comprehensive_text">
+        <text class="sort_price">价格</text> 
+        <view class="price_icon">
+          <view class="fa fa-caret-up icon_up"></view>
+          <view class="fa fa-caret-down icon_down"></view>
+        </view>
+      </view>
+      <text class="line_r"></text>
+    </view>
+    <view class="sort_filter">
+      <text class="comprehensive_text">筛选 </text>
+      <text class="fa fa-filter icon_filter"></text>
+    </view>
+   <!-- <text class="sort_sales" selectable="false" space="false" decode="false">销量</text>
+   <text class="sort_price" selectable="false" space="false" decode="false">价格</text>
+   <text class="sort_filter" selectable="false" space="false" decode="false">筛选</text> -->
+  </view>
+</view>

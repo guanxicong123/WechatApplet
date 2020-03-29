@@ -1,0 +1,205 @@
+<!-- 首页 -->
+<view class="wrapper">
+
+    <!-- 搜索框 -->
+    <!--  -->
+  <view class="{{currentIndex?'bg-two selector':'selector bg-one'}}" >
+    <navigator>
+      <view class="selector_bar" hover-class="none" hover-stop-propagation="false">
+        <text class="fa fa-search icon_select" aria-hidden="true"></text>
+        <input class="nav_select" placeholder="请输入商品"/>
+      </view>
+    </navigator>
+  </view>
+  <!-- 轮播图 -->
+ <view class="banner" hover-class="none" hover-stop-propagation="false">
+   <swiper class="" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" autoplay="true" circular="{{true}}" bindchange="change">
+   <swiper-item class="" item-id="index" wx:for="{{bannerList}}" wx:key="*this">
+          <image class="banner_img" src="{{item}}"lazy-load="false" binderror="" bindload="" data-id="{{index}}">
+          </image>
+   </swiper-item>
+   </swiper>
+ </view>
+ <!-- 搜索框+宫格 -->
+ <view class="middle">
+
+
+  <!-- 分类,一行三个,每个上面图片,下面文字,有2行 -->
+  <view class="classification">
+  <!-- products -->
+    <navigator bindtap="toProducts">
+      <view class="c_item">
+          <image class="fenlei_img znk_fenlei" src="http://www.fskangwo.com/images/product/1491029061.jpg" mode="widthFix" ></image>
+          <text class="fenlei_text ">纸尿片</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/products/products">
+      <view class="c_item">
+          <image class="fenlei_img znk_fenlei" src="http://www.fskangwo.com/images/product/1515466336.jpg" mode="widthFix" ></image>
+          <text class="fenlei_text ">纸尿裤 </text>
+      </view>
+    </navigator>
+    <navigator url="/pages/products/products">
+      <view class="c_item">
+          <image class="fenlei_img znk_fenlei" src="http://www.fskangwo.com/images/product/1491030157.jpg" mode="widthFix" ></image>
+          <text class="fenlei_text ">卫生棉</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/products/products">
+      <view class="c_item">
+          <image class="fenlei_img znk_fenlei" src="http://www.fskangwo.com/images/upload/20150515/14316777656800.jpg" mode="widthFix" ></image>
+          <text class="fenlei_text ">代理加盟</text>
+      </view>
+    </navigator>
+
+      
+  </view>
+</view>
+
+<!-- 今日资讯 -->
+<view class="day">
+  <image src="../../images/toutiao.png" class="img"></image>
+  <view class="cu-tag line-red" class="hot">热议</view>
+  <text>关于聚宝会</text>
+</view>
+<!-- 整点秒杀 -->
+<view class="time">
+  <image src="../../images/time.png" class="img"></image>
+  <text>暂无秒杀活动</text>
+</view>
+<!-- 最新产品 -->
+<view class="news">
+    <view class="news_title">
+        <text class="title_text">一 最新产品 一</text>
+    </view>
+    <view class="new_ul clearfix">
+        <!-- 每一个项目 -->
+        <view class="list_item">
+            <navigator url="/pages/details/details" > 
+                <image class="item_img" src="http://www.fskangwo.com/images/product/1491030157.jpg"></image>
+                <text class="item_title">乐氏宝宝新生儿纸尿裤超薄干爽透气婴儿尿不湿宝宝尿裤线上专供</text>
+            </navigator>
+            <view class="buy">
+                <text class="item_price">￥ 79.00</text>
+                <view class="cart_news">
+                  <!-- <image class="cart_news_img" src="../../images/cart_news.png"></image> -->
+                  <text>已售2.13W件</text>
+                </view>
+            </view>
+        </view>
+        <!-- 2 -->
+        <view class="list_item">
+          <navigator url="/pages/details/details" > 
+               <image class="item_img"                    src="https://cbu01.alicdn.com/img/ibank/2019/765/446/11825644567_1224175409.400x400.jpg">
+            </image>
+              <text class="item_title">乐点宝宝试用装婴儿纸尿裤宝宝尿不湿薄柔透气纸尿裤5片装</text>
+            </navigator>
+            <view class="buy">
+                <text class="item_price">￥ 9.90</text>
+                <view class="cart_news">
+                  <!-- <image class="cart_news_img" src="../../images/cart_news.png"></image> -->
+                  <text>已售2.13W件</text>
+                </view>
+            </view>
+        </view>
+        <!-- 3 -->
+        <view class="list_item">
+          <navigator url="/pages/details/details" > 
+               <image class="item_img"                    src="https://cbu01.alicdn.com/img/ibank/2019/549/212/10855212945_1224175409.400x400.jpg">
+            </image>
+              <text class="item_title">乐点宝宝竹炭因子柔薄金装纸尿裤XL84片男女宝透气尿不湿线上专供</text>
+            </navigator>
+            <view class="buy">
+                <text class="item_price">￥ 79.00</text>
+                <view class="cart_news">
+                  <!-- <image class="cart_news_img" src="../../images/cart_news.png"></image> -->
+                  <text>已售2.13W件</text>
+                </view>
+            </view>
+        </view>
+        <!-- 4 -->
+        <view class="list_item">
+          <navigator url="/pages/details/details" > 
+               <image class="item_img"                    src="https://cbu01.alicdn.com/img/ibank/2018/847/392/9651293748_1224175409.400x400.jpg">
+            </image>
+              <text class="item_title">乐点宝宝试用装婴儿纸尿裤宝宝尿不湿薄柔透气纸尿裤5片装</text>
+            </navigator>
+            <view class="buy">
+                <text class="item_price">￥ 19.90</text>
+                <view class="cart_news">
+                  <!-- <image class="cart_news_img" src="../../images/cart_news.png"></image> -->
+                  <text>已售2.13W件</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 人气热卖 -->
+<view class="popularity">
+  <view class="news_title">
+      <text class="title_text">一 人气热卖 一</text>
+  </view>
+  <view class="new_ul clearfix">
+        <!-- 每一个项目 -->
+        <view class="list_item">
+            <navigator url="/pages/details/details" > 
+                <image class="item_img" src="https://cbu01.alicdn.com/img/ibank/2019/765/446/11825644567_1224175409.400x400.jpg"></image>
+                <text class="item_title">乐氏宝宝新生儿纸尿裤超薄干爽透气婴儿尿不湿宝宝尿裤线上专供</text>
+            </navigator>
+            <view class="buy">
+                <text class="item_price">￥ 79.00</text>
+                <view class="cart_news">
+                  <!-- <image class="cart_news_img" src="../../images/cart_news.png"></image> -->
+                  <text>已售2.13W件</text>
+                </view>
+            </view>
+        </view>
+        <!-- 2 -->
+        <view class="list_item">
+          <navigator url="/pages/details/details" > 
+               <image class="item_img"                    src="https://cbu01.alicdn.com/img/ibank/2019/765/446/11825644567_1224175409.400x400.jpg">
+            </image>
+              <text class="item_title">乐点宝宝试用装婴儿纸尿裤宝宝尿不湿薄柔透气纸尿裤5片装</text>
+            </navigator>
+            <view class="buy">
+                <text class="item_price">￥ 9.90</text>
+                <view class="cart_news">
+                  <!-- <image class="cart_news_img" src="../../images/cart_news.png"></image> -->
+                  <text>已售2.13W件</text>
+                </view>
+            </view>
+        </view>
+        <!-- 3 -->
+        <view class="list_item">
+          <navigator url="/pages/details/details" > 
+               <image class="item_img"                    src="https://cbu01.alicdn.com/img/ibank/2019/549/212/10855212945_1224175409.400x400.jpg">
+            </image>
+              <text class="item_title">乐点宝宝竹炭因子柔薄金装纸尿裤XL84片男女宝透气尿不湿线上专供</text>
+            </navigator>
+            <view class="buy">
+                <text class="item_price">￥ 79.00</text>
+                <view class="cart_news">
+                  <!-- <image class="cart_news_img" src="../../images/cart_news.png"></image> -->
+                  <text>已售2.13W件</text>
+                </view>
+            </view>
+        </view>
+        <!-- 4 -->
+        <view class="list_item">
+          <navigator url="/pages/details/details" > 
+               <image class="item_img"                    src="https://cbu01.alicdn.com/img/ibank/2018/847/392/9651293748_1224175409.400x400.jpg">
+            </image>
+              <text class="item_title">乐点宝宝试用装婴儿纸尿裤宝宝尿不湿薄柔透气纸尿裤5片装</text>
+            </navigator>
+            <view class="buy">
+                <text class="item_price">￥ 19.90</text>
+                <view class="cart_news">
+                  <!-- <image class="cart_news_img" src="../../images/cart_news.png"></image> -->
+                  <text>已售2.13W件</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 人气热卖 end -->
+</view>

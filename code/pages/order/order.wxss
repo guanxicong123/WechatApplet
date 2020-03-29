@@ -1,0 +1,106 @@
+.address{
+  background-color: #fff;
+  padding: 20rpx 50rpx;
+
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+}
+.Myaddress{
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 商品列表 */
+.goodLists{
+  margin-top: 15rpx;
+
+  background-color: #fff;
+}
+.goodList{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f1f1;
+}
+.order_left{
+  flex: 1;
+}
+.goodLists image{
+  width: 200rpx;
+  height: 200rpx;
+
+}
+.order_right{
+  flex: 4;
+  padding: 30rpx;
+
+}
+.order_right .title{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 30rpx;
+}
+.order_right .price{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80rpx;
+  font-size: 30rpx;
+}
+
+/* 订单详情 */
+.order_details{
+  margin-top: 15px;
+  background-color: #fff;
+
+}
+.total,
+.postage,
+.payWay{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #f1f1f1
+}
+
+/* 结算 */
+.settlement{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  border-top:1px solid #f1f1f1 
+}
+.settlement .order_total{
+  flex: 2;
+  line-height:100rpx;
+  margin-right: 40rpx;
+  font-size: 40rpx;
+  padding-left: 50rpx;
+}
+.settlement .order_total .text{
+  font-size: 30rpx;
+  color: #999;
+  margin-right: 30rpx;
+}
+.btn_settlement{
+  flex: 1;
+  text-align: center;
+  background-color: #ff8547 ;
+  color: #fff;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}

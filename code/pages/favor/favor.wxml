@@ -1,0 +1,14 @@
+<view class="empty" wx:if="{{favorLists ==''}}">你暂时还没有收藏商品</view>
+
+<!-- 收藏列表 -->
+<view class="favor" wx:if="{{favorLists !=''}}">
+  <view class="favorList" wx:for="{{favorLists}}" wx:key="*this" bindtap="toDetails">
+    <view class="left">
+      <image src="{{item.imgUrl}}"></image>
+    </view>
+    <view class="right">
+      <view class="title">{{item.title}}</view>
+      <view class="price">{{item.price}}</view>
+    </view>
+  </view>
+</view>

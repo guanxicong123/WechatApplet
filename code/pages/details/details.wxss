@@ -1,0 +1,148 @@
+/* 轮播图 */
+.banner{
+  width: 100%;
+}
+swiper{
+  width: 100%;
+  height: 240px;
+}
+swiper-item image{
+  width: 100%;
+}
+/* commodity商品 */
+.commodity{
+  border-top:1px solid #e6e6e6; 
+  background-color: #fff;
+
+}
+.top{
+  display: flex;
+  padding: 40rpx 0 10rpx 40rpx;
+  justify-content: space-between
+}
+.commodity_title{
+  overflow: hidden;
+  flex: 4;
+  font-size: 35rpx;
+  line-height: 50rpx;
+  letter-spacing: 1px;
+}
+.price{
+  margin-top: 30rpx;
+  color: #fe1902;
+}
+
+.commodity_share{
+  flex: 1;
+}
+.share{
+  padding: 10rpx 20rpx;
+  text-align: center;
+  border-radius: 30rpx 0 0 30rpx;
+  background-color: #f1f1f1;
+  float: right;
+}
+.cuIcon-share{
+  margin-right: 5rpx;
+}
+/* title底部 */
+.bottom{
+  margin:0 30rpx;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e8e8e8;
+}
+/* 商品规格 */
+.margin-top{
+  margin-top: 15rpx;
+}
+.specifications{
+
+}
+.specifications_top{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.specifications image{
+  width: 200rpx;
+  height: 200rpx;
+  border: 1px solid #e8e8e8;
+}
+.specText{
+  width: 50%;
+  text-align: left;
+}
+.specPrice{
+  margin-top: 30rpx;
+}
+.mid{
+  text-align: left;
+  padding: 50rpx;
+
+}
+.mid .h{
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  text-align: left;
+}
+.mid .ul{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50rpx;
+}
+.mid .li{
+  border: 1px solid #aaa;
+  padding: 10rpx 30rpx
+}
+.mid .li.con{
+  background-color: #d9732e;
+  color: #fff;
+}
+/* 规格中的数量加减 */
+.btn_{
+    width: 200rpx;
+    height: 60rpx;
+    border: 1px solid #999;
+    margin-top: 30rpx;
+}
+.cag_num{
+    float: left;
+    width: 70rpx;
+    height: 60rpx;
+    text-align: center;
+}
+.btn_add,.btn_reduce{
+    text-align: center;
+    line-height: 50rpx;
+    float: left;
+    width: 60rpx;
+    height: 60rpx;
+    font-size: 50rpx;
+}
+.btn_add{
+    border-left: 1px solid #999;
+}
+.btn_reduce{
+    border-right: 1px solid #999;
+}
+.cu-btn.lg{
+  width: 100%;
+}
+.btmTab{
+  width: 100%;
+  position:fixed;
+  bottom: 0;
+  z-index: 1000
+}
+/* 图文介绍 */
+.int{
+  width: 100%;
+  height: 100%;
+
+}
+.int image{
+  width: 100%;
+}

@@ -1,0 +1,115 @@
+  <!-- 轮播图 -->
+ <view class="banner" hover-class="none" hover-stop-propagation="false">
+   <swiper class="" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" autoplay="true" circular="{{true}}">
+   <swiper-item class="" item-id="index" wx:for="{{bannerList}}" wx:key="*this">
+          <image class="banner_img" src="{{item}}"lazy-load="false" binderror="" bindload="">
+          </image>
+   </swiper-item>
+   </swiper>
+ </view>
+ <!-- 商品简介 -->
+ <view class="commodity">
+  <view class="top">
+    <view class="commodity_title">
+      <view class="text">乐氏宝宝新生儿纸尿裤超薄干爽透气婴儿尿不湿宝宝尿裤线上专供</view>
+      <view class="price">￥ 79.00</view>
+    </view>
+    <!-- <view class="commodity_share">
+      <view class="share">
+        <text class="cuIcon-share lg text-gray"></text>
+        <text>分享</text>
+      </view>
+    </view> -->
+  </view>
+  <view class="bottom">
+    <text>快递:包邮</text>
+    <text>销量:867件</text>
+    <text>四川成都</text>
+  </view>
+ </view>
+ <!-- 选择规格 -->
+<view class="cu-bar bg-white margin-top"  bindtap="showModal" data-target="ChooseModal">
+  <view class="action" wx:if="{{!showSpecification}}">
+    <text class="cuIcon-title text-orange "></text> 选择 规格
+  </view>
+  <view class="action" wx:if="{{showSpecification}}">
+    <text class="cuIcon-title text-orange "></text> 已选择
+  </view>
+  <view class="action" wx:if="{{showSpecification}}">
+    {{sku.tree[0].v[conIndex].name}}
+  </view>
+</view>
+<!-- 规格弹窗 -->
+<view class="cu-modal bottom-modal {{modalName=='ChooseModal'?'show':''}}" bindtap="hideModal">
+  <view class="cu-dialog" catchtap>
+    <view class="cu-bar bg-white">
+      <view class="action text-blue" bindtap="hideModal">取消</view>
+    </view>
+    <!-- <radio-group> -->
+      <view class="grid padding-sm">
+        <view class="specifications" wx:for="{{sku.tree}}" wx:for-item="tree" wx:key="*this">
+          <view class="specifications_top">
+            <image src="{{tree.imgUrl}}"></image>
+            <view class="specText">
+              <view class="specTitle">{{tree.title}}</view>
+              <view class="specPrice">￥ 79.00</view>
+            </view>
+          </view>
+          <view class="mid">
+          <!-- 单选框 -->
+            <view class="h">{{tree.k}}</view>
+            <view class="ul">
+              <view class="{{goodIndex==conIndex? 'li con':'li'}}" wx:for="{{tree.v}}" wx:for-item="good" wx:for-index= "goodIndex" wx:key="*this" bindtap="checkConIndex" data-id="{{goodIndex}}">
+                {{good.name}}
+              </view>
+            </view>
+            <view class="h">数量</view>
+            <view class="btn_">
+                <text class="btn_reduce" bindtap="subtraction">-</text>
+                <input class="cag_num" type="text" value="{{goodNum}}"></input>
+                <text class="btn_add" bindtap="addition">+</text>
+            </view>
+            </view>
+            <!-- <button class="action text-green" bindtap="hideModal">确定</button> -->
+          <view class="padding flex flex-direction">
+            <button class="cu-btn bg-blue margin-tb-sm lg" bindtap="addToCart">确定</button>
+          </view>
+          
+        </view>
+      </view>
+    <!-- </radio-group> -->
+  </view>
+</view>
+<!-- 图文介绍 -->
+<scroll-view scroll-x class="bg-white nav text-center margin-tb-sm">
+  <view class="cu-item {{index==TabCur?'text-red cur':''}}" wx:for="{{1}}" wx:key="*this" bindtap="tabSelect" data-id="{{index}}">
+    图文介绍
+  </view>
+</scroll-view>
+<view class="int" wx:for="{{introduction}}" wx:key="*this" >
+  <image src="{{item}}"></image>
+</view>
+<!-- 底部导航条 -->
+<view class="cu-bar bg-white tabbar border shop btmTab">
+    <button class="action" open-type="contact">
+      <view class="cuIcon-service text-green">
+        <view class="cu-tag badge"></view>
+      </view>
+      客服
+    </button>
+    <view class="action" bindtap="changefavor">
+      <view wx:if="{{favor}}" class="text-orange">
+        <view  class="cuIcon-favorfill"></view> 已收藏
+      </view>
+      <view wx:if="{{!favor}}">
+        <view  class="cuIcon-favor"></view> 收藏
+      </view>
+    </view>
+    <view class="action" bindtap="toCart">
+      <view class="cuIcon-cart">
+        <view class="cu-tag badge">{{totalNum}}</view>
+      </view>
+      购物车
+    </view>
+  <view class="bg-red submit" bindtap="addCart" data-target="ChooseModal" >加入购物车</view>
+  </view>

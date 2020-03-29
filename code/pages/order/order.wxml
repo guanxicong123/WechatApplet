@@ -1,0 +1,58 @@
+<!-- 收货地址 -->
+<view class="address">
+  <view class = "info">
+    <text>收件人: 小关</text>
+    <text>13240264797</text>
+  </view>
+  
+  <view class="Myaddress">
+    <view>
+      <text class="cuIcon-location lg text-gray"></text>
+      <text>广东省佛山市南海区狮山镇</text>
+    </view>
+    <text class="cuIcon-right lg text-gray right"></text>
+  </view>
+</view>
+
+<!-- 商品列表 -->
+<view class="goodLists">
+  <view class="goodList" wx:for="{{goodLists}}" wx:key="*this" >
+    <view class="order_left">
+      <image src="{{item.imgUrl}}"></image>
+    </view>
+    <view class="order_right">
+      <view class="title">{{item.title}}</view>    
+      <view class="price">
+        <text>￥ {{item.price / 100}}</text>
+        <text>x {{item.num}}</text>
+      </view>
+    </view>
+  </view>
+  
+</view>
+
+<!-- 订单详情 -->
+<view class="order_details">
+  <view class="total">
+    <text>商品总额</text>
+    <text>￥{{total}}</text>
+  </view>
+  <view class="postage">
+    <text>运费</text>
+    <text>￥0.00</text>
+  </view>
+  <view class="payWay">
+    <text>支付方式</text>
+    <text>微信支付</text>
+  </view>
+</view>
+<!-- 支付 -->
+<view class="settlement">
+  <view class="order_total">
+    <text class="text">总计:</text>
+    <text>¥ {{total}}</text>
+  </view>
+  <view class="btn_settlement" bindtap="pay">
+    <text>支付</text>
+  </view>
+</view>

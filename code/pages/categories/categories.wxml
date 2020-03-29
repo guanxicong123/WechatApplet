@@ -1,0 +1,35 @@
+  <!-- 搜索框 -->
+  <view class="selector clearfix">
+    <navigator>
+      <view class="selector_bar" hover-class="none" hover-stop-propagation="false">
+        <text class="fa fa-search icon_select" aria-hidden="true"></text>
+        <input class="nav_select" placeholder="请输入关键字进行搜索"/>
+      </view>
+    </navigator>
+  </view>
+  <!-- 分类 -->
+  <view class="categories">
+    <!-- 左边 -->
+    <scroll-view scroll-y="true" class="left" style="height:{{scrollHeight}}px">
+      <view class="left_ul">
+        <view wx:for="{{lefts}}" data-id="{{index}}" wx:key="*this" bindtap="itemclick" class="{{conId == index ?'con left_item':'left_item'}}">
+            {{item}}
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 右边 -->
+    <scroll-view scroll-y="true" style="height:{{scrollHeight}}px" class="right">
+      <!-- <view wx:for="{{rights[conId]}}" wx:key="id"> -->
+        <!-- <view wx:if="{{item.index == conId}}"> -->
+          <!-- <text class="right_title">全部分类</text> -->
+          <view class="right_ul">
+            <view wx:for="{{rights[conId].categoryItem}}" wx:key="*this" wx:for-index="categoryIndex" bindtap="toProducts" class="right_item" data-id="{{categoryIndex}}">
+              <image src="{{item.imgUrl}}"></image>
+              <view>
+                <text>{{item.text}}</text>
+              </view>
+            </view>
+          </view>
+
+    </scroll-view>
+  </view>

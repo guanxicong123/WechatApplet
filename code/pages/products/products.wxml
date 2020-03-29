@@ -1,0 +1,77 @@
+<!-- 商品列表头部 -->
+<view class="list_top">
+  <!-- 搜索框 -->
+  <view class="selector">
+    <view class="selector_bar" hover-class="none" hover-stop-propagation="false">
+      <text class="fa fa-search icon_select" aria-hidden="true"></text>
+      <input class="nav_select" placeholder="请输入关键字进行搜索"/>
+    </view>
+  </view>
+  <!-- 排序 -->
+  <view class="sort">
+    <view class="sort_comprehensive">
+      <text class="comprehensive_text">综合 </text>
+      <text class="line_r"></text>
+    </view>
+    <view class="sort_sales">
+      <text class="comprehensive_text">销量 </text>
+      <text class="line_r"></text>
+    </view>
+    <view class="sort_price">
+      <view class="comprehensive_text">
+        <text class="sort_price">价格</text> 
+        <view class="price_icon">
+          <view class="fa fa-caret-up icon_up"></view>
+          <view class="fa fa-caret-down icon_down"></view>
+        </view>
+      </view>
+      <text class="line_r"></text>
+    </view>
+    <view class="sort_filter">
+      <text class="comprehensive_text">筛选 </text>
+      <text class="fa fa-filter icon_filter"></text>
+    </view>
+   <!-- <text class="sort_sales" selectable="false" space="false" decode="false">销量</text>
+   <text class="sort_price" selectable="false" space="false" decode="false">价格</text>
+   <text class="sort_filter" selectable="false" space="false" decode="false">筛选</text> -->
+  </view>
+  <!-- 商品介绍 -->
+   <view class="znk_container">
+        <!-- 每一个项目 -->
+        <view class="list_item" bindtap="toDetails">
+            <image class="item_img" src="http://www.fskangwo.com/images/product/1568880783.jpg"></image>
+            <text class="item_title">卡炫宝贝纸尿裤</text>
+            <view class="buy">
+                <text class="item_price">￥ 236.00</text>
+                <text class="btn_buy">购买</text>
+            </view>
+        </view>
+        <!-- 2 -->
+        <view class="list_item" bindtap="toDetails">
+            <image class="item_img" src="http://www.fskangwo.com/images/product/1568880783.jpg"></image>
+            <text class="item_title">卡炫宝贝纸尿裤</text>
+            <view class="buy">
+                <text class="item_price">￥ 236.00</text>
+                <text class="btn_buy">购买</text>
+            </view>
+        </view>
+        <!-- 3 -->
+        <view class="list_item" bindtap="toDetails">
+            <image class="item_img" src="http://www.fskangwo.com/images/product/1568880783.jpg"></image>
+            <text class="item_title">卡炫宝贝纸尿裤</text>
+            <view class="buy">
+                <text class="item_price">￥ 236.00</text>
+                <text class="btn_buy">购买</text>
+            </view>
+        </view>
+        <!-- 4 -->
+        <view class="list_item" bindtap="toDetails">
+            <image class="item_img" src="http://www.fskangwo.com/images/product/1568880783.jpg"></image>
+            <text class="item_title">卡炫宝贝纸尿裤</text>
+            <view class="buy">
+                <text class="item_price">￥ 236.00</text>
+                <text class="btn_buy">购买</text>
+            </view>
+        </view>
+    </view>
+</view>

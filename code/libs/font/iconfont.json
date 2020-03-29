@@ -1,0 +1,65 @@
+{
+  "id": "1708493",
+  "name": "小程序",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6064937",
+      "name": "购物车",
+      "font_class": "qicheqianlian-",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "10305189",
+      "name": "会员中心 选中",
+      "font_class": "huiyuanzhongxinxuanzhong",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "12909251",
+      "name": "分类-选中",
+      "font_class": "feneli-copy",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "13636408",
+      "name": "会员中心 选中",
+      "font_class": "huiyuan-select-copy",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "13636422",
+      "name": "购物车",
+      "font_class": "qicheqianlian-select-copy",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "13636310",
+      "name": "分类-选中",
+      "font_class": "feneli-copy-select",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "13636380",
+      "name": "首页-选中",
+      "font_class": "index",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "7851236",
+      "name": "首页-选中",
+      "font_class": "index-cody-select",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

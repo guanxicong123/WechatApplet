@@ -1,0 +1,17 @@
+
+.empty{
+  margin-top: 30rpx;
+  text-align: center;
+}
+.btm{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+button{
+  width: 100%;
+}
+button:not([size='mini']){
+  
+  width: 100%;
+}

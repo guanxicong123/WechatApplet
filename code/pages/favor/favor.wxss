@@ -1,0 +1,34 @@
+.empty{
+  margin-top: 50rpx;
+  text-align: center;
+  color: #999;
+}
+/* 收藏列表 */
+.favor{
+}
+.favor .favorList{
+  background-color: #fff;
+  margin-top: 15rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.favorList .left{
+  width: 300rpx;
+  height: 200rpx;
+  padding: 20rpx;
+}
+.left image{
+  width: 100%;
+  height: 100%;
+}
+.right{
+  padding: 30rpx;
+
+}
+.right .title{
+  
+}
+.right .price{
+  
+  margin-top: 50rpx;
+}

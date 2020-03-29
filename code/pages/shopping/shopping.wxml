@@ -1,0 +1,53 @@
+<!-- 购物车 -->
+<!-- 空页面 没有商品时候的购物车显示页面  -->
+<view>
+
+<view class="shopping" wx:if="{{goodLists == ''}}">
+    <!-- 购物车的头部 -->
+    <view class="shop_top">
+        <view class="shopping_top">
+            <image class="shop_kong" src="../../images/emptyCart.png" mode="widthFix"></image>
+        </view>
+    </view>
+    <!-- 文字 -->
+      <view class="shop_text">您的购物车中没有商品哦! </view>
+      <!-- 去登陆的链接 -->
+        <view class="aToShou" wx:if="{{userInfo == ''}}" bindtap="toLogin">
+          <text class="aToShou_text">要先登陆噢!</text>
+        </view>
+      
+      <!-- 登陆后,购物车未空,去首页 -->
+      <view class="aToShou" wx:elif="{{cartLists == ''}}" bindtap="toIndex">
+          <text class="aToShou_text">去首页看看吧!</text>
+      </view>
+</view>
+<!-- 购物车中有商品的时候 -->
+<view class="cart" wx:else>
+  <view class="goodList" wx:for="{{goodLists}}" wx:key="*this" data-id="{{index}}">
+    <view class="left">
+      <image src="{{item.imgUrl}}" bindtap="toDetails"></image>
+    </view>
+    <view class="right">
+      <view class="title">{{item.title}}</view>
+      <view class="btn_">
+        <text class="btn_reduce" bindtap="subtraction" data-id="{{index}}">-</text>
+        <input class="cag_num" type="text" value="{{item.num}}"></input>
+        <text class="btn_add" bindtap="addition" data-id="{{index}}">+</text>
+      </view>
+      <view class="price">￥{{item.price / 100}}</view>
+      <text class="cuIcon-delete lg text-gray del" bindtap="del" data-id="{{index}}"></text>
+    </view>
+
+  </view>
+  <!-- 底部的结算 -->
+  <view class="settlement">
+    <view class="total">
+      <text class="text">总计:</text>
+      <text>¥ {{total}}</text>
+    </view>
+    <view class="btn_settlement" bindtap="settle">
+      <text>结算</text>
+    </view>
+  </view>
+</view>
+</view>

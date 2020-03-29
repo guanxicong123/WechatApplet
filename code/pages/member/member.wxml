@@ -1,0 +1,138 @@
+<view class="member">
+    <!-- 会员中心_top 部分 -->
+<view class="member_top" style="backgroundColor: #00BFFF">
+    <view class="user">
+        <!-- <view class="avatar"></view> -->
+        <view class="padding">
+          <view class="cu-avatar round" style="background-image:url({{userInfo.avatarUrl}});">
+          </view>
+        </view>
+        <view>
+          <view class="name">{{userInfo.nickName}}</view>
+          <view class="status">普通会员</view>
+          <!-- <button class="cu-btn bg-blue margin-tb-sm lg" open-type="getUserInfo" bindtap="login" >
+            授权登陆          
+          </button> -->
+        </view>
+
+    </view>
+</view>
+<!-- 我的订单 -->
+<view class="my_order">
+    <!-- 头部 -->
+    <view class="top" bindtap="toMyOrder">
+        <view class="left">
+            <text class="cuIcon-edit lg text-gray"></text>
+            <text class="order_text" >我的订单</text>
+        </view>
+        <view class="right">
+            <text class="cuIcon-right lg text-gray rightIcon"></text>
+        </view>
+    </view>
+    <!-- <view class="cu-item arrow top">
+      <view class="list">
+        <text class="cuIcon-edit lg text-grey"></text>
+        <text class="text-grey">我的订单</text>
+      </view>
+    </view> -->
+    <!-- 内容 -->
+    <view class="content">
+        <view class="payment" bindtap="payment">
+            <view class="icon_payment">
+                <!-- <image src="../../images/payment.png"></image> -->
+                <text class="cuIcon-pay lg text-gray content_icon"></text>
+            </view>
+            <text class="payment">待付款</text>
+        </view>
+        <view class="received" bindtap="received">
+            <view class="icon_received">
+                <text class="cuIcon-deliver lg text-gray content_icon"></text>
+            </view>
+            <text class="delivered">待发货</text>
+        </view>
+        <view class="delivered" bindtap="delivered">
+            <view class="icon_delivered">
+                <text class="cuIcon-send lg text-gray content_icon"></text>
+            </view>
+            <text class="delivered">待收货</text>
+        </view>
+        <view class="returns" bindtap="returns">
+            <view class="icon_returns">
+                <text class="cuIcon-redpacket lg text-gray content_icon"></text>
+            </view>
+            <text class="returns">退换货</text>
+        </view>
+    </view>
+</view>
+
+<view class="person">
+    <!-- 个人中心 -->
+    <!-- 分类,一行三个,每个上面图片,下面文字,有2行 -->
+  <view class="classification">
+  <!-- products -->
+    <navigator bindtap="changeDistributor">
+      <view class="c_item">
+          <text class="cuIcon-upstage lg text-gray red"></text>
+          <text class="fenlei_text ">成为分销商</text>
+      </view>
+    </navigator>
+    <navigator bindtap="knowOut">
+      <view class="c_item">
+          <text class="cuIcon-calendar lg text-gray blue"></text>
+          <text class="fenlei_text ">关于我们 </text>
+      </view>
+    </navigator>
+    <navigator url="/pages/favor/favor">
+      <view class="c_item">
+          <text class="cuIcon-favor lg text-gray yellow"></text>
+          <text class="fenlei_text ">我的收藏</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/address/address">
+      <view class="c_item">
+          <text class="cuIcon-location lg text-gray blue"></text>
+          <text class="fenlei_text ">收货地址</text>
+      </view>
+    </navigator>
+  </view>
+  <view class="classification">
+  <!-- products -->
+      <navigator>
+      <view class="c_item">
+          <text class="cuIcon-tag lg text-gray orange"></text>
+          <text class="fenlei_text ">我的优惠卷 </text>
+      </view>
+    </navigator>
+    <navigator>
+      <view class="c_item">
+          <text class="cuIcon-settings lg text-gray gary"></text>
+          <text class="fenlei_text ">设置</text>
+      </view>
+    </navigator>
+
+    <navigator>
+      <view class="c_item">
+          <text class="cuIcon-group lg text-gray yellow"></text>
+          <text class="fenlei_text ">联系我们</text>
+      </view>
+    </navigator>
+    <navigator>
+      <view class="c_item">
+          <text class="cuIcon-service lg text-gray blue"></text>
+          <text class="fenlei_text ">在线客服</text>
+      </view>
+    </navigator>
+    
+
+      
+  </view>
+    
+</view>
+<!-- 页尾 -->
+<view class="foot">
+  <image src="../../images/yejiao.png"></image>
+  <view>小关技术支持</view>
+  <view>店主手机1333333333</view>
+  <view>微信:33333333</view>
+</view>
+</view>

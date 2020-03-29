@@ -1,0 +1,5 @@
+<view class="empty">暂无收货地址</view>
+<!-- 添加新地址 -->
+<view class="padding flex flex-direction btm">
+  <button class="cu-btn bg-red margin-tb-sm lg">添加新地址</button>
+</view>

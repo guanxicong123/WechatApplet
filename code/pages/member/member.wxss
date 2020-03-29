@@ -1,0 +1,168 @@
+.member{
+    background-color: #eee;
+    padding-bottom: 50rpx;
+}
+/* 会员中心_top 部分 */
+.member_top{
+    width: 100%;
+    height: 300rpx;
+    /* border-radius: 0 0 250rpx 250rpx/0 0 100rpx 100rpx; */
+    overflow: hidden;
+    background-image: url(https://timgsa.baidu.com/timg?di=8625b3767447f62d85f522984d12067b&image=&imgtype=0&quality=80&sec=1584527080832&size=b9999_10000&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F05%2F18%2F01%2F3159be65af900d8.jpg)
+
+}
+.user{
+    width: 50%;
+    text-align: center;
+    /* color: #fff; */
+    display: flex;
+    justify-content: space-around;
+}
+.cu-avatar{
+  width: 120rpx;
+  height:120rpx;
+}
+
+.name{
+    margin-top: 50rpx;
+}
+.status{
+    padding-top: 30rpx;
+}
+.btn_login{
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  background-color: #f16767;
+  padding: 20rpx,0rpx;
+}
+button:not([size='mini']){
+  width: 220rpx;
+}
+/* 会员中心 我的订单 */
+
+.my_order{
+    background-color: #fff;
+    margin-top: 30rpx;
+}
+/* 我的订单 头部 */
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx;
+    font-size: 35rpx;
+    position: relative;
+}
+
+.left .order_text{
+    margin-left: 10rpx;
+}
+
+.right{
+    color: #999;
+    margin-right: 20rpx;
+}
+.rightIcon{
+    font-size: 20rpx;
+
+}
+/* .list{
+  font-size: 30rpx;
+}
+.text-grey{
+  margin-left: 10rpx;
+} */
+/* 我的订单 内容 */
+.content{
+    padding: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    text-align: center;
+}
+
+.content_icon{
+  font-size: 80rpx;
+  color: #bcbcbc;
+}
+.rightIcon{
+  font-size: 40rpx;
+}
+/* 个人信息 */
+.person{
+    background-color: #fff;
+    margin-top: 15rpx;
+}
+.person .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx;
+    font-size: 35rpx;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.person .left .order_text{
+    margin-left: 10rpx;
+}
+
+.person .right .view{
+    color: #999;
+    margin-right: 20px;
+
+}
+/* 宫格 */
+.classification{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.c_item{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.fenlei_img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.fenlei_text{
+  font-size: 25rpx;
+  padding-left: -20rpx;
+  margin-top: 15rpx;
+}
+.c_item .text-gray{
+  font-size: 65rpx;
+}
+.red{
+  color: #ff5a5e;
+}
+.blue{
+  color: #7ec1ff;
+}
+.yellow{
+  color: #ffbd5a;
+}
+.orange{
+  color: #ffa366;
+}
+.gary{
+  color: #afafaf;
+}
+/* 页脚 */
+.foot{
+  margin-top: 40rpx;
+  text-align: center;
+  color: #ceced2;
+  font-size: 20rpx;
+}
+.foot image{
+  width: 100rpx;
+  height: 40rpx;
+}
